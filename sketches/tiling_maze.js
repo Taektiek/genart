@@ -1,10 +1,10 @@
 function setup() {
-    createCanvas(400, 400);
+    createCanvas(800, 800);
     background(255)
     stroke(0)
 
-    width = 16
-    height = 16
+    width = 32
+    height = 32
 
     strokeWeight(4)
     
@@ -12,10 +12,10 @@ function setup() {
         for (let j=0; j<height; j++) {
             if (Math.random() < 0.5) {
                 console.log("1")
-                line(i*(400/width), j*(400/height), (i+1)*(400/width), (j+1)*(400/height));
+                line(i*(800/width), j*(800/height), (i+1)*(800/width), (j+1)*(800/height));
             } else {
                 console.log("2")
-                line((i+1)*(400/width), j*(400/height), i*(400/width), (j+1)*(400/height));
+                line((i+1)*(800/width), j*(800/height), i*(800/width), (j+1)*(800/height));
             }
         }
     }

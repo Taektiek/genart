@@ -1,13 +1,13 @@
 function setup() {
-    createCanvas(400, 400);
+    createCanvas(800, 800);
     background(0)
     stroke(0)
 
     colorMode(HSB, 255)
 
-    width = 32
-    height = 32
-    strokeWeight(4)
+    width = 16
+    height = 16
+    strokeWeight(8)
 
     for (let i=0;i<width;i++) {
         for (let j=0; j<height; j++) {
@@ -17,14 +17,13 @@ function setup() {
             stroke(255)
 
             if (n < 0.25) {
-                line((i+0.5)*(400/width), j*(400/height), (i+0.5)*(400/width), (j+1)*(400/height));
+                line((i+0.5)*(800/width), j*(800/height), (i+0.5)*(800/width), (j+1)*(800/height));
             } else if (n > 0.25 && n < 0.5) {
-                console.log("recte lijn")
-                line(i*(400/width), (j+0.5)*(400/height), (i+1)*(400/width), (j+0.5)*(400/height));
+                line(i*(800/width), (j+0.5)*(800/height), (i+1)*(800/width), (j+0.5)*(800/height));
             } else if (n > 0.5 && n < 0.75) {
-                line(i*(400/width), j*(400/height), (i+1)*(400/width), (j+1)*(400/height));
+                line(i*(800/width), j*(800/height), (i+1)*(800/width), (j+1)*(800/height));
             } else if (n > 0.75) {
-                line((i+1)*(400/width), j*(400/height), i*(400/width), (j+1)*(400/height));
+                line((i+1)*(800/width), j*(800/height), i*(800/width), (j+1)*(800/height));
             }
         }
     }   
