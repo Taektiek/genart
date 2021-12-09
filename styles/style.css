@@ -7,10 +7,30 @@ body {
     width: 100%;
     height: 100%;
 
-    background-color: white;
+    background-color: black;
 
     display: flex;
 
     align-items: center;
     justify-content: center;
 }
+
+.arrow {
+    font-size: 120px;
+    color: white;
+    margin: 20px;
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited { 
+    text-decoration: none;
+    color: white;
+}
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }

@@ -5,7 +5,8 @@ RADIUS = 400
 let points = []
 
 function setup() {
-    createCanvas(800, 800);
+    let canvas = createCanvas(800, 800);
+    canvas.parent("canvas-parent")
     background(0)
     colorMode(HSB, 255)
     stroke(255, 0, 255, 5)
