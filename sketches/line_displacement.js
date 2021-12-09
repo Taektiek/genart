@@ -2,7 +2,8 @@ POINT_AMOUNT = 16
 AMPLITUDE = 500
 
 function setup() {
-    createCanvas(800, 800);
+    let canvas = createCanvas(800, 800);
+    canvas.parent("canvas-parent")
     background(255)
     stroke(0, 0, 0, 10)
     strokeWeight(2)

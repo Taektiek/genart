@@ -19,7 +19,8 @@ function create_circle(offset_x, offset_y) {
 }
 
 function setup() {
-    createCanvas(800, 800);
+    let canvas = createCanvas(800, 800);
+    canvas.parent("canvas-parent")
     background(255)
     stroke(0, 0, 0, 5)
     strokeWeight(2)

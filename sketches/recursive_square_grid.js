@@ -60,7 +60,8 @@ function create_grid(cell_amt_x, cell_amt_y, start_x, start_y, size_x, size_y, n
 }
 
 function setup() {
-    createCanvas(800, 800);
+    let canvas = createCanvas(800, 800);
+    canvas.parent("canvas-parent")
     background(255)
 
     noStroke()
